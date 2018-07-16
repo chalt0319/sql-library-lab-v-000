@@ -8,7 +8,7 @@
 -- INNER JOIN subgenres ON series.subgenre_id = subgenres.id;
 -- -- GROUP BY series.author_id;
 
-SELECT series.title FROM series
+SELECT * FROM series
 JOIN characters ON characters.author_id = series.author_id
 GROUP BY characters.species
 ORDER BY COUNT(characters.species) DESC;
