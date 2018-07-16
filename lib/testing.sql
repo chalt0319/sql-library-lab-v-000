@@ -10,4 +10,5 @@
 
 SELECT series.title FROM series
 JOIN characters ON characters.author_id = series.author_id
-GROUP BY characters.species;
+GROUP BY characters.species
+ORDER BY COUNT(characters.species) DESC;
