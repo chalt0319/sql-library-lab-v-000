@@ -9,4 +9,4 @@
 -- -- GROUP BY series.author_id;
 
 SELECT series.title FROM series
-JOIN characters ON characters.author_id = series.author_id
+JOIN characters ON characters.author_id = series.author_id;
