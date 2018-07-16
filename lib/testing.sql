@@ -10,4 +10,3 @@
 
 SELECT series.title FROM series
 JOIN characters ON characters.author_id = series.author_id
-
