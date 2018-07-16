@@ -1,2 +1,2 @@
-SELECT characters.species, characters.species FROM characters;
--- ORDER BY COUNT(characters.species) DESC;
+SELECT characters.species, COUNT(characters.species) FROM characters
+GROUP BY characters.species;
