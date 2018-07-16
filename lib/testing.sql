@@ -4,6 +4,6 @@
 -- LIMIT 1;
 
 SELECT authors.name, subgenres.name FROM authors
-JOIN series ON series.author_id = authors.id
-INNER JOIN subgenres ON series.subgenre_id = subgenre_id
-GROUP BY series.author_id;
+JOIN series ON series.author_id = authors.id;
+-- INNER JOIN subgenres ON series.subgenre_id = subgenre_id
+-- GROUP BY series.author_id;
